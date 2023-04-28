@@ -4,6 +4,9 @@ import Insta from './assets/insta.png'
 
 function App() {
 
+  var texto = "Seja bem-vinda ao Studio Felix, eu sou a Julia!! Para agilizar o seu atendimento me diga o seu nome e qual procedimento precisa realizar.";
+  texto = window.encodeURIComponent(texto);
+
   return (
     <div className="h-screen w-full">
 
@@ -20,7 +23,7 @@ function App() {
         <div className='flex flex-col items-center mt-28'>
           <div className='flex justify-between items-center w-70'>
             <img src={Zap} alt="zap" width={50} height={50} />
-            <a href='https://wa.me/5511977574635?text=Seja%20bem-vinda%20ao%20Studio%20Felix,%20eu%20sou%20Julia!!%20%20Para%20agilizar%20o%20seu%20atendimento%20me%20diga%20o%20seu%20nome%20e%20qual%20procedimento%20deseja%20realizar.' target='_blank' className='font-bold underline'>WhattsApp | Agendamentos</a>
+            <a href={`https://wa.me/5511977574635?text=${texto}`} target='_blank' className='font-bold underline'>WhattsApp | Agendamentos</a>
           </div>
           <div className='flex items-center justify-between w-70 mt-10 ml-4'>
             <img src={Insta} alt="Instagram" width={30} height={30} />
