@@ -1,4 +1,4 @@
-import Image from './assets/image.jpeg'
+import Image from './assets/image2.jpeg'
 import Zap from './assets/zap.png'
 import Insta from './assets/insta.png'
 
