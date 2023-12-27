@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.typing-animation {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(11, end);
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 38%;
+    }
+}
+
+.cursor-blink {
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 0.072em;
+    height: 1em;
+    background-color: #000;
+    animation: blink 1s step-end infinite, cursorDisappear 2s ease-in-out 2s forwards;
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes cursorDisappear {
+    to {
+      width: 0;
+      opacity: 0;
+    }
+  }
