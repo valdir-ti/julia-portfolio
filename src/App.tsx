@@ -1,16 +1,16 @@
-import Image from './assets/image2.jpeg'
+import Image from './assets/img-1.jpeg'
 import Zap from './assets/zap.png'
 import Insta from './assets/insta.png'
 
 function App() {
 
-  var texto = "Seja bem-vinda ao Studio Felix, eu sou a Julia!! Para agilizar o seu atendimento me diga o seu nome e qual procedimento precisa realizar.";
+  let texto = "Seja bem-vinda ao Studio Felix, eu sou a Julia!! Para agilizar o seu atendimento me diga o seu nome e qual procedimento precisa realizar.";
   texto = window.encodeURIComponent(texto);
 
   return (
     <div className="h-screen w-full">
 
-      <div className="h-screen bg-[url('./assets/background.jpeg')] opacity-25 bg-cover relative"></div>
+      <div className="h-screen bg-[url('./assets/img-2.jpeg')] opacity-25 bg-cover relative"></div>
 
       <div className='absolute top-2 left-0 w-full'>
         <div className='flex justify-center flex-col items-center mt-6'>
@@ -18,7 +18,7 @@ function App() {
           <h3 className='mt-1'>Designer de sobrancelhas</h3>
         </div>
         <div className='flex justify-center mt-28 h-[160px]'>
-          <img src={Image} alt="Julia image" width={150} height={150} className='rounded-full border-emerald-200 border-2'/>
+          <img src={Image} alt="Julia image" width={150} height={150} className='rounded-3xl border-emerald-100 border-2'/>
         </div>
         <div className='flex flex-col items-center mt-28'>
           <div className='flex justify-between items-center w-70'>
